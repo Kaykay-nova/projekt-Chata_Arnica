@@ -6,6 +6,12 @@
   --text: #1f2403;
 }
 
+:root[data-theme='dark'] {
+  --background-primary: #132221;
+  --background-secondary: #476462;
+  --text: #e1e1e1;
+}
+
 /* ZÁKLADNÍ STYLY */
 
 *,
@@ -25,7 +31,7 @@ html {
 
 nav {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 ul {
@@ -54,6 +60,7 @@ span {
 .logo {
   font-family: 'Dawning of a New Day', cursive;
   font-size: 1.5rem;
+  color: var(--text);
 }
 
 .navlink {
@@ -73,6 +80,7 @@ span {
 
 .pitch > p {
   font-family: 'Lora', serif;
+  color: var(--text)
 }
 
 /* ÚVODNÍ TEXT  */
@@ -85,6 +93,7 @@ span {
 .subheading__content {
   text-align: center;
   margin: 0 auto;
+  color: var(--text);
 }
 
 /* ÚVODNÍ OBRÁZEK */
@@ -104,6 +113,7 @@ span {
   flex-direction: column;
   align-items: center;
   background-color: var(--background-secondary);
+  color: var(--text);
 }
 
 .pricelist__title {
@@ -172,6 +182,7 @@ span {
   padding: 2rem;
   font-size: 1.3rem;
   font-style: oblique;
+  color: var(--text);
 }
 
 .review__author {
@@ -191,6 +202,7 @@ span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: var(--text);
 }
 
 .contact__row span {
@@ -210,6 +222,7 @@ span {
 .icon {
   height: 100%;
   margin-right: 0.5rem;
+  fill: var(--text);
 }
 
 /* SEM ZAČNĚTE PSÁT SVÉ STYLY PRO MOBIL */
